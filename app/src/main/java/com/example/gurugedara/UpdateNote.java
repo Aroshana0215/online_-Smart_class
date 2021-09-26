@@ -29,7 +29,7 @@ public class UpdateNote extends AppCompatActivity {
         btn_update = findViewById(R.id.update_btn);
         btn_delete = findViewById(R.id.delete_btn);
 
-        //First we call this
+        //First we call dis
         getAndSetIntentData();
 
         //Set Action bar title after getAndSet Intent Data
