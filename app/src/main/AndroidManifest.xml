@@ -14,6 +14,26 @@
             android:label="Support Service" />
 
 
+        <activity android:name=".UpdatePayment"
+            android:label="UPDATE PAYMENT"
+            android:parentActivityName=".Payment"/>
+        <activity
+            android:name=".AddPayment"
+            android:label="ADD PAYMENT"
+            android:parentActivityName=".Payment" />
+        <!-- <activity android:name=".Payment" -->
+        <!-- android:label="DO PAYMENT" /> -->
+        <activity
+            android:name=".UpdateQuestion"
+            android:label="UPDATE QUESTION"
+            android:parentActivityName=".QestioBox" />
+        <activity
+            android:name=".AddQuestion"
+            android:label="ADD QUESTION"
+            android:parentActivityName=".QestioBox" />
+        <!-- <activity android:name=".QestioBox"  android:label="QUESTION BOX"></activity> -->
+
+
         <activity
             android:name=".UpdateNote"
             android:parentActivityName=".ActivityNote" />
