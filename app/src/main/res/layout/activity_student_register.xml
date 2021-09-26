@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student_Register">
+
+    <EditText
+        android:id="@+id/et_name_student"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Name"
+        android:background="@drawable/custom_input_login"
+        android:drawableLeft="@drawable/custom_user_icon"
+        android:drawablePadding="12dp"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_register_ui_student_1" />
+
+    <EditText
+        android:id="@+id/et_email_student"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_input_login"
+        android:drawableLeft="@drawable/custom_email_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Email"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name_student" />
+
+    <EditText
+        android:id="@+id/et_phone_sudent"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:background="@drawable/custom_input_login"
+        android:drawableLeft="@drawable/custom_phone_icon"
+        android:drawablePadding="12dp"
+        android:padding="10dp"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_student" />
+
+    <EditText
+        android:id="@+id/et_reg_username_student"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Username"
+        android:background="@drawable/custom_input_login"
+        android:drawableLeft="@drawable/custom_user_icon"
+        android:drawablePadding="12dp"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_phone_sudent" />
+
+    <Button
+        android:id="@+id/btn_register_student"
+        android:layout_width="99dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/custon_button_login"
+        android:text="@string/btn_register_student"
+        android:textSize="12sp"
+        app:backgroundTint="@android:color/holo_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_reg_confirm_password_student" />
+
+    <TextView
+        android:id="@+id/tv_register_ui_student_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="24dp"
+        android:text="Already have an account ? "
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register_student" />
+
+    <Button
+        android:id="@+id/btn_login_register_ui_student"
+        android:layout_width="79dp"
+        android:layout_height="37dp"
+        android:background="@drawable/custon_button_login"
+        android:text="@string/btn_login_register_ui_student"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_register_ui_student_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toEndOf="@+id/tv_register_ui_student_2"
+        app:backgroundTint="@android:color/holo_blue_dark"/>
+
+    <EditText
+        android:id="@+id/et_reg_password_student"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_input_login"
+        android:drawableLeft="@drawable/custom_lock_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_reg_username_student" />
+
+    <EditText
+        android:id="@+id/et_reg_confirm_password_student"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_input_login"
+        android:drawableLeft="@drawable/custom_lock_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_reg_password_student" />
+
+    <TextView
+        android:id="@+id/tv_register_ui_student_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Register"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

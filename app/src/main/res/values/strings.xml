@@ -15,5 +15,21 @@
     <string name="comment_text">Comment your issue</string>
     <string name="comment_input">Type here..</string>
     <string name="save_button">Save</string>
+    <string name="btn_add_announcement">ADD NEW ANNOUNCEMENT</string>
+    <string name="tv_topic">Topic</string>
+    <string name="tv_content">Content</string>
+    <string name="et_topic">Enter topic here</string>
+    <string name="et_content">Enter content here</string>
+    <string name="btn_save_announcement">Save</string>
+    <string name="btn_cancel_announcement">Cancel</string>
+    <string name="btn_update_announcement">UPDATE</string>
+    <string name="btn_delete_announcement">DELETE</string>
+    <string name="btn_login_student">Login</string>
+    <string name="btn_register_student_1">Register</string>
+    <string name="btn_register_student">REGISTER</string>
+    <string name="btn_register_login_ui_student">Regiter</string>
+    <string name="btn_login_register_ui_student">Login</string>
+    <string name="btn_logout_student">LOGOUT</string>
+    <string name="btn_delete_profile_student">Delete Account</string>
 
 </resources>
