@@ -44,6 +44,20 @@
         <activity
             android:name=".ActivityNote"
             android:label="Notes" />
+        <activity android:name=".HomePage"></activity>
+        <activity
+            android:name=".StudyMaterials"
+            android:label="STUDY MATERIALS" />
+        <activity
+            android:name=".UpdateAddClass"
+            android:parentActivityName=".AddClass" />
+        <activity
+            android:name=".AddActivity"
+            android:label="ADD NEW CLASS"
+            android:parentActivityName=".AddClass" />
+        <activity
+            android:name=".AddClass"
+            android:label="CLASSES"/>
 
         <activity android:name=".MainActivity" >
         <intent-filter>
