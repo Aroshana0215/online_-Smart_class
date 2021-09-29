@@ -49,7 +49,7 @@ public class AddClass extends AppCompatActivity {
 
         storeDataArrays();
 
-        customAdapter = new ClassAdapter(AddClass.this, AddClass.this, class_id, class_subject, class_batch, class_type,
+        customAdapter = new ClassAdapter(AddClass.this,this, class_id, class_subject, class_batch, class_type,
                 class_fees);
         recyclerView.setAdapter(customAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(AddClass.this));

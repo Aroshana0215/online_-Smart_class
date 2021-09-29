@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context=".Student_Login">
+    tools:context=".Teacher_Login">
 
     <ImageView
         android:id="@+id/im_main_logo"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_marginTop="50dp"
+        android:layout_width="166dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="76dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,7 +18,7 @@
         app:srcCompat="@drawable/main_logo" />
 
     <Button
-        android:id="@+id/btn_login_student"
+        android:id="@+id/btn_login_teacher"
         android:layout_width="93dp"
         android:layout_height="35dp"
         android:layout_marginTop="20dp"
@@ -27,28 +26,27 @@
         android:text="@string/btn_login_student"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_password_student"
+        app:layout_constraintTop_toBottomOf="@+id/et_password_teacher"
         app:backgroundTint="@android:color/holo_blue_dark"/>
 
     <TextView
         android:id="@+id/tv_login_ui_student_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Student Login"
+        android:layout_marginTop="28dp"
         android:fontFamily="monospace"
+        android:text="Teacher Login"
         android:textColor="@color/black"
         android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/im_main_logo" />
 
     <EditText
-        android:id="@+id/et_login_email_student"
+        android:id="@+id/et_login_email_teacher"
         android:layout_width="350dp"
         android:layout_height="60dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/custom_input_login"
         android:drawableLeft="@drawable/custom_email_icon"
         android:drawablePadding="12dp"
@@ -57,12 +55,12 @@
         android:inputType="text"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_login_ui_student_3" />
 
     <EditText
-        android:id="@+id/et_password_student"
+        android:id="@+id/et_password_teacher"
         android:layout_width="350dp"
         android:layout_height="60dp"
         android:layout_marginTop="24dp"
@@ -76,7 +74,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_login_email_student" />
+        app:layout_constraintTop_toBottomOf="@+id/et_login_email_teacher" />
 
     <TextView
         android:id="@+id/tv_login_ui_student_1"
@@ -88,10 +86,10 @@
         android:text="Don't have an account ?"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login_student" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_teacher" />
 
     <Button
-        android:id="@+id/btn_register_login_ui_student"
+        android:id="@+id/btn_register_login_ui_teacher"
         android:layout_width="106dp"
         android:layout_height="35dp"
         android:text="@string/btn_register_login_ui_student"

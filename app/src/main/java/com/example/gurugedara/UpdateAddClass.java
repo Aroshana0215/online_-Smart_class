@@ -38,14 +38,21 @@ public class UpdateAddClass extends AppCompatActivity {
             ab.setTitle(subject);
         }
 
+        //update_button.setOnClickListener((view) -> {
 
-        update_button.setOnClickListener((view) -> {
-            ClassDatabaseHelper myDB = new ClassDatabaseHelper(UpdateAddClass.this);
-            subject = subject_input.getText().toString().trim();
-            batch = batch_input.getText().toString().trim();
-            classType = classType_input.getText().toString().trim();
-            classFees = classFees_input.getText().toString().trim();
-            myDB.updateData(id, subject, batch, classType, classFees);
+        //});
+        update_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClassDatabaseHelper myDB = new ClassDatabaseHelper(UpdateAddClass.this);
+
+                subject = subject_input.getText().toString().trim();
+                batch = batch_input.getText().toString().trim();
+                classType = classType_input.getText().toString().trim();
+                classFees = classFees_input.getText().toString().trim();
+                myDB.updateData( id , subject, batch, classType, classFees);
+
+            }
         });
 
         delete_button.setOnClickListener(new View.OnClickListener() {

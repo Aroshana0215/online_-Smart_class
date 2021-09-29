@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#84CAEA"
     tools:context=".Add_Announcement">
 
     <TextView
@@ -22,10 +23,11 @@
         android:layout_width="320dp"
         android:layout_height="41dp"
         android:layout_marginTop="20dp"
+        android:background="@drawable/custon_button_annoucement"
         android:ems="10"
         android:hint="@string/et_topic"
-        android:background="@drawable/custom_input_login"
         android:inputType="textPersonName"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,9 +50,10 @@
         android:layout_height="133dp"
         android:layout_marginTop="20dp"
         android:hint="@string/et_content"
-        android:background="@drawable/custom_input_login"
         android:inputType="textMultiLine"
         android:lines="6"
+        android:background="@drawable/custon_button_annoucement"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"

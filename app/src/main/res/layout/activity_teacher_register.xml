@@ -4,27 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Student_Register">
+    tools:context=".Teacher_Register">
 
     <EditText
-        android:id="@+id/et_name_student"
+        android:id="@+id/et_name_teacher"
         android:layout_width="350dp"
         android:layout_height="40dp"
-        android:layout_marginTop="64dp"
-        android:ems="10"
-        android:hint="Name"
+        android:layout_marginTop="84dp"
         android:background="@drawable/custom_input_login"
         android:drawableLeft="@drawable/custom_user_icon"
         android:drawablePadding="12dp"
-        android:padding="10dp"
+        android:ems="10"
+        android:hint="Name"
         android:inputType="textPersonName"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_register_ui_student_1" />
 
     <EditText
-        android:id="@+id/et_email_student"
+        android:id="@+id/et_email_teacher"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
@@ -38,10 +38,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_name_student" />
+        app:layout_constraintTop_toBottomOf="@+id/et_name_teacher" />
 
     <EditText
-        android:id="@+id/et_phone_sudent"
+        android:id="@+id/et_phone_teacher"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
@@ -55,10 +55,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_email_student" />
+        app:layout_constraintTop_toBottomOf="@+id/et_email_teacher" />
 
     <EditText
-        android:id="@+id/et_reg_username_student"
+        android:id="@+id/et_reg_username_teacher"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
@@ -72,10 +72,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_phone_sudent" />
+        app:layout_constraintTop_toBottomOf="@+id/et_phone_teacher" />
 
     <Button
-        android:id="@+id/btn_register_student"
+        android:id="@+id/btn_register_teacher"
         android:layout_width="99dp"
         android:layout_height="35dp"
         android:layout_marginTop="36dp"
@@ -85,7 +85,7 @@
         app:backgroundTint="@android:color/holo_purple"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_reg_confirm_password_student" />
+        app:layout_constraintTop_toBottomOf="@+id/et_reg_confirm_password_teacher" />
 
     <TextView
         android:id="@+id/tv_register_ui_student_2"
@@ -97,10 +97,10 @@
         android:text="Already have an account ? "
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_register_student" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_register_teacher" />
 
     <Button
-        android:id="@+id/btn_login_register_ui_student"
+        android:id="@+id/btn_login_register_ui_teacher"
         android:layout_width="79dp"
         android:layout_height="37dp"
         android:background="@drawable/custon_button_login"
@@ -113,7 +113,7 @@
         app:backgroundTint="@android:color/holo_blue_dark"/>
 
     <EditText
-        android:id="@+id/et_reg_password_student"
+        android:id="@+id/et_reg_password_teacher"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
@@ -127,10 +127,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_reg_username_student" />
+        app:layout_constraintTop_toBottomOf="@+id/et_reg_username_teacher" />
 
     <EditText
-        android:id="@+id/et_reg_confirm_password_student"
+        android:id="@+id/et_reg_confirm_password_teacher"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
@@ -144,20 +144,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_reg_password_student" />
+        app:layout_constraintTop_toBottomOf="@+id/et_reg_password_teacher" />
 
     <TextView
         android:id="@+id/tv_register_ui_student_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="80dp"
         android:fontFamily="monospace"
-        android:text="Student Register"
+        android:text="Teacher Register"
         android:textColor="@color/black"
         android:textSize="24sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

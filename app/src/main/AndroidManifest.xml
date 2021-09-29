@@ -9,20 +9,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Gurugedara">
+        <activity android:name=".Menu_Teacher"
+            android:label="Teacher Menu"></activity>
+        <activity android:name=".Teacher_Register" />
+        <activity android:name=".Teacher_Login" />
+        <activity
+            android:name=".Announcement_Student_View"
+            android:label="Announcements"
+            android:parentActivityName=".Menu_Student">
+
+        </activity>
+        <activity
+            android:name=".calcuator"
+            android:label="Calculator"
+            android:parentActivityName=".Menu_Student">
+
+        </activity>
         <activity
             android:name=".ActivitySupport"
-            android:label="Support Service" />
-
-
-        <activity android:name=".UpdatePayment"
+            android:label="Support Service"
+            android:parentActivityName=".Menu_Student" />
+        <activity
+            android:name=".UpdatePayment"
             android:label="UPDATE PAYMENT"
-            android:parentActivityName=".Payment"/>
+            android:parentActivityName=".Payment" />
         <activity
             android:name=".AddPayment"
             android:label="ADD PAYMENT"
             android:parentActivityName=".Payment" />
-        <!-- <activity android:name=".Payment" -->
-        <!-- android:label="DO PAYMENT" /> -->
+        <activity
+            android:name=".Payment"
+            android:label="DO PAYMENT"
+            android:parentActivityName=".Menu_Student" />
         <activity
             android:name=".UpdateQuestion"
             android:label="UPDATE QUESTION"
@@ -31,9 +49,10 @@
             android:name=".AddQuestion"
             android:label="ADD QUESTION"
             android:parentActivityName=".QestioBox" />
-        <!-- <activity android:name=".QestioBox"  android:label="QUESTION BOX"></activity> -->
-
-
+        <activity
+            android:name=".QestioBox"
+            android:label="QUESTION BOX"
+            android:parentActivityName=".Menu_Student" />
         <activity
             android:name=".UpdateNote"
             android:parentActivityName=".ActivityNote" />
@@ -43,11 +62,19 @@
             android:parentActivityName=".ActivityNote" />
         <activity
             android:name=".ActivityNote"
-            android:label="Notes" />
-        <activity android:name=".HomePage"></activity>
+            android:label="Notes"
+            android:parentActivityName=".Menu_Student" />
+        <activity android:name=".HomePage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".StudyMaterials"
-            android:label="STUDY MATERIALS" />
+            android:label="STUDY MATERIALS"
+            android:parentActivityName=".Menu_Student" />
         <activity
             android:name=".UpdateAddClass"
             android:parentActivityName=".AddClass" />
@@ -57,12 +84,13 @@
             android:parentActivityName=".AddClass" />
         <activity
             android:name=".AddClass"
-            android:label="CLASSES"/>
-        <activity android:name=".UserProfile"></activity>
-        <activity android:name=".Menu_Student"></activity>
-        <activity android:name=".Student_Register" />
-        <activity android:name=".Student_Login"/>
+            android:label="CLASSES"
+            android:parentActivityName=".Menu_Teacher"/>
 
+        <activity android:name=".Menu_Student"
+            android:label="Student Menu"/>
+        <activity android:name=".Student_Register" />
+        <activity android:name=".Student_Login" />
         <activity
             android:name=".UpdateAnnouncement"
             android:parentActivityName=".Announcement" />
@@ -70,19 +98,11 @@
             android:name=".Add_Announcement"
             android:label="Add Announcements"
             android:parentActivityName=".Announcement" />
-        <activity android:name=".Announcement" >
-
-        </activity>
-
-        <activity android:name=".MainActivity" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
-
-
+        <activity
+            android:name=".Announcement"
+            android:label="Announcements"
+            android:parentActivityName=".Menu_Student" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

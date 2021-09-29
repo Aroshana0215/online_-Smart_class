@@ -4,27 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Announcement">
+    tools:context=".Announcement_Student_View">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/announcement_recyclerView"
+        android:id="@+id/announcement_student_view_recyclerView"
         android:paddingTop="?attr/actionBarSize"
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:background="#84CAEA"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_add_announcement"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
-        android:text="@string/btn_add_announcement"
-        app:layout_constraintBottom_toBottomOf="@+id/announcement_recyclerView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

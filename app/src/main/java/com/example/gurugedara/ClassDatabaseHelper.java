@@ -12,11 +12,11 @@ import androidx.annotation.Nullable;
 public class ClassDatabaseHelper extends SQLiteOpenHelper {
 
     private Context context;
-    private static final String DATABASE_NAME = "GuruGedara.db";
+    private static final String DATABASE_NAME = "GuruGedara2.db";
     private static final int DATABASE_VERSION = 1;
 
     private static final String TABLE_NAME = "new_class";
-    private static final String COLUMN_ID = "_id";
+    private static final String COLUMN_ID = "id";
     private static final String COLUMN_SUBJECT = "subject";
     private static final String COLUMN_BATCH = "batch";
     private static final String COLUMN_TYPE = "class_type";
@@ -78,7 +78,7 @@ public class ClassDatabaseHelper extends SQLiteOpenHelper {
         cv.put(COLUMN_TYPE, class_type);
         cv.put(COLUMN_FEES, class_fees);
 
-        long result = db.update(TABLE_NAME, cv, "_id=?", new String[]{row_id});
+        long result = db.update(TABLE_NAME, cv, "id=?", new String[]{row_id});
         if(result == -1) {
             Toast.makeText(context, "Failed to Update", Toast.LENGTH_SHORT).show();
         }else {
@@ -88,7 +88,7 @@ public class ClassDatabaseHelper extends SQLiteOpenHelper {
 
     void deleteOneRow(String row_id) {
         SQLiteDatabase db = this.getWritableDatabase();
-        long result = db.delete(TABLE_NAME, "_id=?", new String[]{row_id});
+        long result = db.delete(TABLE_NAME, "id=?", new String[]{row_id});
         if(result == -1) {
             Toast.makeText(context, "Failed to Delete.", Toast.LENGTH_SHORT).show();
         }else {
